@@ -1,0 +1,13 @@
+name: WhitelistBot
+version: '${version}'
+main: com.github.lkapitman.App
+api-version: 1.18
+prefix: EasyWhiteList
+
+authors: [ ulynaxes ]
+description: The plugin allows you to automatically add players to the whitelist via discord
+website: ulynaxes.github.io
+commands:
+  easywhitelist:
+    usage: /<command>
+    aliases: [easywl,ewhitelist]

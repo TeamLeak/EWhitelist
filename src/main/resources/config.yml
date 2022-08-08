@@ -1,0 +1,18 @@
+# Enable plugin? true - yes, false - no
+enable: true
+#Token for discord. Get this for developers page.
+token: "TOKEN"
+#ID of channel for check new usernames.
+channelID: "1006309449532702852"
+#if of role, role was given when user has been added to whitelist.
+roleID: "1006309798008061992"
+#messages
+#description for discord
+description: "Bot for adding players to the whitelist"
+
+## EASY WHITELIST
+
+whitelist: false
+no_whitelisted: "&aYou're not that awesome to be whitelisted."
+whitelisted:
+  - "Reinassance"
