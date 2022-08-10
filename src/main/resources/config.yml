@@ -10,9 +10,15 @@ roleID: "1006309798008061992"
 #description for discord
 description: "Bot for adding players to the whitelist"
 
+#Info command
+servername: "HelpLand"
+version: "1.18.2"
+ip: "helpland.mclan.ru"
+
 ## EASY WHITELIST
 
-whitelist: false
-no_whitelisted: "&aYou're not that awesome to be whitelisted."
+whitelist: true
+no_whitelisted: "&aВы не в вайт-листе!"
 whitelisted:
   - "Reinassance"
+  - "lol_pop_oik"

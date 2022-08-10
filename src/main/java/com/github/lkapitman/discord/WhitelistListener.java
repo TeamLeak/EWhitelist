@@ -12,10 +12,7 @@ public class WhitelistListener {
         gateway.on(MessageCreateEvent.class).subscribe(event -> {
             final Message message = event.getMessage();
             if (message.getChannel().block().getId().asString().equalsIgnoreCase(App.getInstance().getConfig().getString("channelID")) && !message.getAuthor().get().isBot()) {
-                App.getStorage().setWhitelist(Boolean.FALSE);
-                App.getStorage().addWhitelist(message.getContent());
-                App.getStorage().setWhitelist(Boolean.TRUE);
-                App.getStorage().reload();
+                Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "easywl add " + message.getContent());
                 Bukkit.getConsoleSender().sendMessage(
                         "\033[1mUser was added!"
                 );
