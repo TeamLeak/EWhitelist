@@ -1,12 +1,13 @@
-name: NJUTILS
+name: WhitelistBot
 version: '${version}'
-main: com.github.leanfe.App
+main: com.github.lkapitman.App
 api-version: 1.18
-prefix: NJUTILS
+prefix: EasyWhiteList
 
-authors: [ Leanfe ]
-description: The plugin adds a social rating system for the administration, as well as grants rights on the server.
-website: leanfe.github.io
-
-depend:
-  - LuckyPerms
+authors: [ ulynaxes ]
+description: The plugin allows you to automatically add players to the whitelist via discord
+website: ulynaxes.github.io
+commands:
+  easywhitelist:
+    usage: /<command>
+    aliases: [easywl,ewhitelist]

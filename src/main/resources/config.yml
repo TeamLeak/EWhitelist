@@ -1,28 +1,24 @@
 # Enable plugin? true - yes, false - no
 enable: true
-
 #Token for discord. Get this for developers page.
 token: "TOKEN"
-
-# MESSAGES
-
-#description for bot
+#ID of channel for check new usernames.
+channelID: "1006309449532702852"
+#if of role, role was given when user has been added to whitelist.
+roleID: "1006309798008061992"
+#messages
+#description for discord
 description: "Bot for adding players to the whitelist"
-rating_description: "This part of the bot allows you to give a rating to users!"
-permissions_description: "This part of the bot allows you to give a permission to users!"
 
-## PERMISSIONS
+#Info command
+servername: "HelpLand"
+version: "1.18.2"
+ip: "helpland.mclan.ru"
 
-# Enable the granting of rights? true - yes, false - no
-permissions: true
+## EASY WHITELIST
 
-# The right to issue
-permission_for_give: "chatty.chat.sendMessage"
-
-# RATING
-
-# # Enable the granting of rating? true - yes, false - no
-rating: false
-
-# A role that has the right to raise and lower the rating.
-rating_DG_role: "1040256458190762095"
+whitelist: true
+no_whitelisted: "&aВы не в вайт-листе!"
+whitelisted:
+  - "Reinassance"
+  - "lol_pop_oik"
