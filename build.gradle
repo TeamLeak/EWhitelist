@@ -3,7 +3,7 @@ plugins {
     id "com.github.johnrengelman.shadow" version "7.1.2"
 }
 
-group = 'com.github.lkapitman'
+group = 'com.github.leanfe'
 version = '1.0.0'
 
 repositories {
@@ -16,14 +16,19 @@ repositories {
         name = 'sonatype'
         url = 'https://oss.sonatype.org/content/groups/public/'
     }
+    maven {
+        name = 'purpur'
+        url = "https://repo.purpurmc.org/snapshots"
+    }
 }
 
 dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
-    compileOnly 'io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT'
 
-    implementation("com.discord4j:discord4j-core:3.2.2")
+    compileOnly("org.purpurmc.purpur:purpur-api:1.19.2-R0.1-SNAPSHOT")
+
+    implementation('com.discord4j:discord4j-core:3.2.3')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 }
 

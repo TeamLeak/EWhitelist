@@ -1,6 +1,6 @@
-package com.github.lkapitman.discord;
+package com.github.leanfe.discord.info;
 
-import com.github.lkapitman.App;
+import com.github.leanfe.App;
 import discord4j.core.GatewayDiscordClient;
 import discord4j.core.event.ReactiveEventAdapter;
 import discord4j.core.event.domain.interaction.ChatInputInteractionEvent;
@@ -12,7 +12,7 @@ import reactor.core.publisher.Mono;
 public class InfoCommand {
 
     public void init(GatewayDiscordClient client) {
-        ApplicationCommandRequest randomCommand = ApplicationCommandRequest.builder()
+        var randomCommand = ApplicationCommandRequest.builder()
                 .name("info")
                 .description("Return info about server")
                 .build();
@@ -31,8 +31,6 @@ public class InfoCommand {
     }
 
     private static String result() {
-        return "===== " + App.getInstance().getConfig().getString("servername") + " ===== \n"
-                + "IP ADDRESS: " + App.getInstance().getConfig().getString("ip") + " \n"
-                + "VERSION: " + App.getInstance().getConfig().getString("version");
+        return App.getInstance().getConfig().getString("description");
     }
 }

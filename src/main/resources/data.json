@@ -1,0 +1,12 @@
+{
+  "users" : [
+    {
+      "username":"Leanfe",
+      "exp": 8
+    },
+    {
+      "username":"Hitler",
+      "exp": 999
+    }
+  ]
+}
